@@ -6,7 +6,7 @@ const sequelize = require('../config/connection');
 //Password hashing
 const bcrypt = require('bcrypt');
 
-//Creates the Uer model
+//Creates the User model
 
 class User extends Model {
     checkPassword(loginPw) {
