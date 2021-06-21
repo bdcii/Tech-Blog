@@ -35,7 +35,7 @@ Post.init(
         sequelize,
         freezeTableName: true,
         uderscored: true,
-        modelName: 'comment'
+        modelName: 'post'
     }
 );
 

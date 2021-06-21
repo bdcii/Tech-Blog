@@ -2,7 +2,7 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+// const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 //Routes
 
@@ -28,11 +28,11 @@ router.get('/:id', (req, res) => {
         include: [
             {
               model: Post,
-              attributes: ['id', 'title', 'post_body', 'created_at']
+              attributes: ['id', 'title', 'post_body', 'createdAt']
             },
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'created_at'],
+                attributes: ['id', 'comment_text', 'createdAt'],
                 include: {
                   model: Post,
                   attributes: ['title']

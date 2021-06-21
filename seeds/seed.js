@@ -1,10 +1,12 @@
 //Dependencies
 const sequelize = require('../config/connection');
-const seedUsers = require('./user-seeds');
-const seedPosts = require('./post-seeds');
-const seedComments = require('./comment-seeds');
+const { User, Post, Comment } = require('../models');
 
-//function to seed users, posts, and comments
+const seedUsers = require('./userSeeds.js');
+const seedPosts = require('./postSeeds.js');
+const seedComments = require('./commentSeeds.js');
+
+
 const seedAll = async () => {
   await sequelize.sync({ force: true });
     console.log('\n----- DATABASE SYNCED -----\n');
