@@ -25,7 +25,8 @@
         
 ## Installation
         
-    No need to install, just visit https://bdcii.github.io/Tech-Blog/
+    No need to install, just visit https://pure-ridge-32160.herokuapp.com/
+    https://bdcii.github.io/Tech-Blog/
         
         
         
